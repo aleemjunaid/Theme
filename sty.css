@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 15px solid yellow; */
+}
+body{
+    background-color: #27211d;
+    /* border: 15px solid yellow; */
+}
+#menu{
+    transition-duration: 0.5s;
+}
+.lihov:hover{
+    transition-duration: 0.2s;
+    background-color: rgba(255, 255, 255, 0.124);
+}
+li:hover{
+    color: white;
+}
+.loghov:hover{
+    color: white;
+    transition-duration: 0.5s;
+}
+.bgimg{
+    background-image: url(./breadcrumb_bg_image.jpg);
+}
+.fontfam{
+    font-family: 'Roboto', sans-serif;
+}
+.icon:hover i{
+    color: #f89709;
+    transition-duration: 0.5s;
+}
+.uls>li:hover{
+    color: #f89709;
+    transition-duration: 0.5s;
+}
+#carts{
+    transition-duration: 0.5s;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.stylecartimg{
+    height: 20vh;
+}
+.abc{
+    margin-top: 10px;
+}
+.hov:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.5s;
+}
+.hov2:hover{
+    transition-duration: 0.5s;
+}
+@media screen and (min-width:400px) and (max-width:600px){
+    #divs{
+        margin-left: 15%;
+    }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#menu{
+    transition-duration: 0.5s;
+}
+.lihov:hover{
+    transition-duration: 0.2s;
+    background-color: rgba(255, 255, 255, 0.124);
+}
+li:hover{
+    color: white;
+}
+.bgimg{
+    background-image: url(./breadcrumb_bg_image.jpg);
+}
+.fontfam{
+    font-family: 'Roboto', sans-serif;
+}
+.loginp{
+    outline: black;
+    border: 2px solid #38312d;
+    color: #38312d;
+}
+.sign:hover{
+    background-color: white;
+    color: black;
+    transition-duration: 0.5s;
+}
+.loghov:hover{
+    color: white;
+    transition-duration: 0.5s;
+}

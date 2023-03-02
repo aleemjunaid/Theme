@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sty.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <script src="./scipt.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Nav Start -->
+    <nav class="bg-[#27211d] fixed top-0 w-[100%] z-10">
+        <div class="flex justify-between items-center">
+            <i id="menu"
+                class="fa-solid fa-bars text-[#f89808] text-[1rem] p-12 md:pd-16 lg-pd-16 md:text-[2rem] lg:text-[2rem] cursor-pointer">
+            </i>
+            <img class="h-20 md:h-full lg:h-full" src="./logo.png" alt="">
+            <i id="cartshow" class="cursor-pointer fa-solid fa-cart-shopping text-[#f89808] text-[1rem] pr-20 md:text-[2rem] lg:text-[2rem] relative" onclick="carticon()">
+                <sup class="text-[#f89808]"></sup>
+            </i>
+        </div>
+        <div id="carts" class="bg-[#27211d] h-[80vh] w-96 absolute top-[100%] right-[-390px]">
+            <p class="absolute top-28 text-white text-2xl">c</p>
+        </div>
+    </nav>
+    <h1 id="h" class=""></h1>
+    <div id="cancel" class="border h-4 w-4 bg-red-100 z-30 fixed top-[21%] right-[30px] fixed invisible">
+    <button id="x" class="text-white fixed top-40 right-8 invisible z-20">x</button>
+    </div>
+    <!-- Nav end -->
+
+    <!-- Menu Start -->
+    <div id="menu_show"
+        class="bg-[#27211d] h-[80.7vh] w-80 relative d-none right-96 flex flex-col top-[112px] md:top-[152px] lg:top-[152px] z-10">
+        <div class="flex justify-between">
+            <ul class="">
+                <div class="w-72 lihov duration-75">
+                    <li class="text-[#f89808] text-[1.2rem] p-4 cursor-pointer w-full">HOME</li>
+                </div>
+                <div class="w-72 lihov duration-75">
+                    <li class="text-[#f89808] text-[1.2rem] p-4 cursor-pointer w-full">ABOUT</li>
+                </div>
+                <div class="w-72 lihov duration-75">
+                    <a href="./index.html">
+                        <li class="text-white text-[1.2rem] p-4 cursor-pointer w-full">SHOP</li>
+                    </a>
+                </div>
+                <div class="w-72 lihov duration-75">
+                    <li class="text-[#f89808] text-[1.2rem] p-4 cursor-pointer w-full">PAGES</li>
+                </div>
+            </ul>
+            <i id="menu_cross" class="fa-solid fa-xmark text-[#f89808] text-[1rem] cursor-pointer pr-2"></i>
+        </div>
+        <div>
+            <h1 class="text-white text-[1.4rem] p-4">Currency</h1>
+            <div class="">
+                <div class="flex p-4">
+                    <img class="h-4 w-8" src="./Flag_of_the_United_States.png" alt="">
+                    <p id="flag" class="text-white relative bottom-1 pl-2 cursor-pointer" onclick="flag()">USD</p>
+                    <img class="h-4 w-8 ml-20" src="./eur.jfif" alt="">
+                    <p id="flagtwo" class="text-white relative bottom-1 pl-2 cursor-pointer" onclick="flagtwo()">EUR</p>
+                </div>
+                <div class="flex p-4">
+                    <img class="h-4 w-8" src="./download.jfif" alt="">
+                    <p id="flagthree" class="text-white relative bottom-1 pl-2 cursor-pointer" onclick="flagthree()">GBP
+                    </p>
+                    <img class="h-4 w-8 ml-20" src="./download.png" alt="">
+                    <p id="flagfour" class="text-white relative bottom-1 pl-2 cursor-pointer" onclick="flagfour()">AUD
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <i class="fa-solid fa-user text-[#f89808] text-[1rem] p-4"></i>
+            <a href="./login.html">
+                <p class="loghov text-[#f89808] text-[1.2rem] pt-2 cursor-pointer">Log in</p>
+            </a>
+        </div>
+    </div>
+    <!-- Menu End -->
+
+    <!-- Main Start -->
+    <div
+        class="bg-[#27211d] w-[100%] h-[20vh] md:h-[30vh] lg:h-[30vh] absolute top-28 md:top-36 lg:top-36 flex flex-col items-center">
+        <div class="bgimg flex flex-col items-center w-full">
+            <h1 class="font-bold text-white text-[2rem] md:text-[3rem] lg:text-[3rem] p-16 fontfam">PRODUCT</h1>
+            <p class="text-white text-[1rem] md:text-[1.3rem] lg:text-[1.3rem] relative bottom-16 fontfam">Home /
+                Account</p>
+        </div>
+    </div>
+    <div id="divs" class="flex flex-wrap justify-between w-[70%] md:w-[100%] lg:w-[100%] relative ml-44 md:ml-0 lg:ml-0 top-[-150px]">
+
+    </div>
+
+    <!-- Main End  -->
+
+    <!-- Footer Start -->
+    <div class="res bg-[#27211d] flex flex-col items-center justify-center h-[80vh] relative top-[-150px]">
+        <img class="p-20 h-60 md:h-80 lg-h-96" src="./logo.png" alt="">
+        <div class="relative w-[70%] flex justify-evenly items-center">
+            <ul
+                class="cursor-pointer uls flex justify-evenly w-full text-white text-[0.8rem] md:text-[1rem] lg:text-[1.4rem]">
+                <li>Terms & Condition</li>
+                <li>Privacy Policy</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Consumer Information</li>
+            </ul>
+        </div>
+        <div class="relative p-12 flex justify-evenly w-72">
+            <div title="Twitter"
+                class="h-8 w-8 rounded-full border flex justify-center items-center icon cursor-pointer">
+                <i class="fa-brands fa-twitter text-white text-[0.8rem]"></i>
+            </div>
+            <div title="Facebook"
+                class="h-8 w-8 rounded-full border flex justify-center items-center icon cursor-pointer">
+                <i class="fa-brands fa-facebook text-white text-[0.8rem]"></i>
+            </div>
+            <div title="Instagram"
+                class="h-8 w-8 rounded-full border flex justify-center items-center icon cursor-pointer">
+                <i class="fa-brands fa-instagram text-white text-[0.8rem]"></i>
+            </div>
+        </div>
+        <p class="text-white relative">Copyright by Design Themes. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>
